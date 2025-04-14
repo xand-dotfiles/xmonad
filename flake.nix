@@ -10,16 +10,8 @@
         flake-parts.lib.mkFlake { inherit inputs; } {
             imports = [
                 inputs.hm-flake-parts.flakeModule
+                ./home
+                ./nixos
             ];
-
-            flake = {
-                homeModules = {
-                    xmonad = ./xmonad.nix;
-                };
-
-                nixosModules = {
-                    xmonad = ./configuration.nix;
-                };
-            };
         };
 }
