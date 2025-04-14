@@ -34,6 +34,7 @@ in
         ./programs/alacritty
         ./programs/rofi
         ./services/picom
+        ./services/unclutter
     ];
 
     xsession = {
