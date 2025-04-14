@@ -12,12 +12,14 @@
                 inputs.hm-flake-parts.flakeModule
             ];
 
-            homeModules = {
-                xmonad = ./xmonad.nix;
-            };
+            flake = {
+                homeModules = {
+                    xmonad = ./xmonad.nix;
+                };
 
-            nixosModules = {
-                xmonad = ./configuration.nix;
+                nixosModules = {
+                    xmonad = ./configuration.nix;
+                };
             };
         };
 }
