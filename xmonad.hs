@@ -44,7 +44,7 @@ main = xmonad . ewmh . ewmhFullscreen $ XMonad.def
 
     -- Mouse focusing behavior
     , XMonad.clickJustFocuses   = False
-    , XMonad.focusFollowsMouse  = False
+    , XMonad.focusFollowsMouse  = True
     }
 
 keys conf@XConfig {XMonad.modMask = modMask} = Map.fromList $
