@@ -1,7 +1,10 @@
+let
+    homeModules = {
+        xmonad = ./xmonad.nix;
+    };
+in
 {
     flake = {
-        homeModules = {
-            xmonad = ./xmonad.nix;
-        };
+        inherit homeModules;
     };
 }

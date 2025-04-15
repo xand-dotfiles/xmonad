@@ -1,7 +1,10 @@
+let
+    nixosModules = {
+        xmonad = ./configuration.nix;
+    };
+in
 {
     flake = {
-        nixosModules = {
-            xmonad = ./configuration.nix;
-        };
+        inherit nixosModules;
     };
 }
